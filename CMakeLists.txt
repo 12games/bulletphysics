@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.7)
+
+set(INSTALL_LIBS OFF CACHE BOOL "Set when you want to install libraries")
+
+set(BUILD_BULLET2_DEMOS OFF CACHE BOOL "Set when you want to build the Bullet 2 demos")
+set(BUILD_BULLET3 OFF CACHE BOOL "Set when you want to build Bullet 3")
+set(BUILD_CLSOCKET OFF CACHE BOOL "Set when you want to build apps with enet TCP networking support")
+set(BUILD_CPU_DEMOS OFF CACHE BOOL "Build original Bullet CPU examples")
+set(BUILD_ENET OFF CACHE BOOL "Set when you want to build apps with enet UDP networking support")
+set(BUILD_EXTRAS OFF CACHE BOOL "Set when you want to build the extras")
+set(BUILD_OPENGL3_DEMOS OFF CACHE BOOL "Set when you want to build the OpenGL3+ demos")
+set(BUILD_PYBULLET OFF CACHE BOOL "Set when you want to build pybullet (Python bindings for Bullet)")
+set(BUILD_SHARED_LIBS OFF CACHE BOOL "Use shared libraries")
+set(BUILD_UNIT_TESTS OFF CACHE BOOL "Build Unit Tests")
+set(USE_CUSTOM_VECTOR_MATH OFF CACHE BOOL "Use custom vectormath library")
+set(USE_DOUBLE_PRECISION OFF CACHE BOOL "Use double precision")
+set(USE_GLUT OFF CACHE BOOL "Use Glut")
+set(USE_GRAPHICAL_BENCHMARK OFF CACHE BOOL "Use Graphical Benchmark")
+
+SUBDIRS(bullet3)
