@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.7)
 
-set(INSTALL_LIBS OFF CACHE BOOL "Set when you want to install libraries")
+set(INSTALL_LIBS ON CACHE BOOL "Set when you want to install libraries")
 
 set(BUILD_BULLET2_DEMOS OFF CACHE BOOL "Set when you want to build the Bullet 2 demos")
 set(BUILD_BULLET3 OFF CACHE BOOL "Set when you want to build Bullet 3")
