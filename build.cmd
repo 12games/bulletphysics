@@ -19,8 +19,8 @@ git clone https://github.com/bulletphysics/bullet3.git build\bullet3
 cd build
 IF NOT EXIST %COMPILER_TOOLSET% mkdir %COMPILER_TOOLSET%
 
-cd "%COMPILER_TOOLSET%"
-cmake -G "%COMPILER_TOOLSET%" -DCMAKE_INSTALL_PREFIX:PATH=%INSTALL_PREFIX% ..\
+cd %COMPILER_TOOLSET%
+cmake -G %COMPILER_TOOLSET% -DCMAKE_INSTALL_PREFIX:PATH=%INSTALL_PREFIX% ..\
 cmake --build . --target all
 cmake --build . --target install
 
